@@ -1,0 +1,255 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  /* background-color:whitesmoke; */
+  background-color: #e9ecef !important;
+}
+
+.contenedor {
+  width: 100%;
+  display: grid;
+  /* padding: 20px; */
+  grid-template-columns: 255px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 55px 700px 60px;
+  grid-template-areas: "menu head head head head"
+  "menu main main main main"
+  "menu pie pie pie pie";
+ 
+
+}
+
+
+.head {
+  grid-area: head;
+  color: white;
+  background-color:#343a40 ;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+}
+
+.head .bar {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.head .user {
+display: flex;
+align-items: center;
+align-self: center;
+margin-right: 30px;
+}
+
+.head .user .img-wrap{
+  width: 65px;
+}
+
+.head .user .img-wrap img {
+width: 85%;
+  height: 38px;
+border-radius: 50%
+}
+
+.head .user h3 {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.menu .brand {
+display: flex;
+align-items: center;
+height: 53px;
+border-bottom: 1px solid #4b545c;
+}
+
+.menu .brand a{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.menu .brand .img-wrap{
+  width: 49px;
+}
+
+.menu .brand .img-wrap img {
+width: 85%;
+  height: 38px;
+border-radius: 50%
+}
+
+.menu .brand h3 {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #9f9c9c;
+}
+
+.menu {
+  grid-area: menu;
+  color: white;
+  background-color: #343a40;
+  box-shadow: 0px 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22) !important;
+}
+
+.menu .user {
+  border-bottom: 1px solid #4b545c;
+}
+
+.menu .user a {
+display: flex;
+  height: 80px;
+  margin-left: 20px;
+align-items: center;
+
+}
+
+.menu .user a .img-wrap{
+  width: 65px;
+}
+
+.menu .user a .img-wrap img {
+width: 90%;
+  height: 52px;
+border-radius: 50%
+}
+
+.menu .user a {
+  text-decoration: none;
+}
+
+.menu .user a h3 {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #4b545c;
+  /* height: 100%; */
+}
+
+.options .menu-title {
+  font-size: 26px;
+  margin-top: 11px;
+}
+
+
+.main {
+  grid-area: main;
+  /* color: white; */
+  background-color: #edf2f4;
+}
+
+.pie {
+  grid-area: pie;
+  /* color: #0000; */
+  background-color:whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.log-container {
+width: 100%;
+height: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.log-container h2 {
+  font-weight: lighter;
+}
+
+.form-login {
+  width: 28%;
+  background-color: #fff;
+  box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.form-login h3 {
+  font-weight: lighter;
+  font-size: 21px;
+  align-self: center;
+  padding-top: 20px;
+}
+
+.form-login input[type="email"], input[type="password"], input[type="text"] {
+  width: 80%;
+  align-self: center;
+  margin-top: 20px;
+  padding: 6px;
+  /* border: 1px solid #ccc; */
+  border-radius: 3px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.form-login input[type="email"], input[type="password"]:focus {
+  /* border-radius: 7px; */
+  box-shadow: inset 0px 0px 0.2px #444;
+}
+
+input[type="submit"] {
+  width: 37%;
+  margin-top: 20px;
+  padding: 8px;
+  background-color: #233e71;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms all;
+  border: none;
+  align-self: center;
+  transition: 300ms all;
+} 
+
+input[type="submit"]:hover {
+  background-color: #444;
+}
+
+.icon-user {
+  color: rgb(64, 64, 64);
+  position: absolute;
+  margin-left: 298px;
+  margin-top: 32px;
+}
+
+.icon-lock {
+  color: rgb(64, 64, 64);
+  position: absolute;
+  margin-left: 298px;
+  margin-top: 32px;  
+}
+
+
+.form-login a {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+
+.icon-user:focus {
+  opacity: 1;
+}
+
+.srv-validation-message {
+  color: red;
+  align-self: center;
+  font-size: 13px;
+}
